@@ -2,7 +2,7 @@
 Super simple RFID web login interface using Raspberry Pi and RC522.
 
 
-[Sample Video](https://www.youtube.com/watch?v=v9dAYPJD44M)
+[Sample Video](https://www.youtube.com/watch?v=v9dAYPJD44M) <br>
 [Tutorial](http://youtu.be/U68d1JQViRg)
 
 License
