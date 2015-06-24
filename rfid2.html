@@ -80,24 +80,22 @@
 
 	<script>
 	// Connects with Server
-	var socket = io('http://192.168.2.20:8500');
+
+	var socket = io(window.location.hostname + ":8500");
 
 
 	socket.on('rfid', function(data){
-		if (data == "c8d90b5"){
-			$(".icon").addClass('one');
-			$(".help").text("Hello, Luigi!");
-			setTimeout(function() {
-				$(".icon").removeClass('one');
-				$(".help").text("Scan your NFC Card.");
-			}, 2500);
-		} else {
-			$(".icon").addClass('animated shake');
-			$(".help").text("Try Again");
-			setTimeout(function() {
-				$(".help").text("Scan your NFC Card.");
-			}, 2500);
-		}
+		
+		$(".icon").addClass('one');
+		$(".help").text("Hello, " + data + "!");
+		setTimeout(function() {
+			$(".icon").removeClass('one');
+			$(".help").text("Scan your NFC Card.");
+		}, 2500);
 	});
+
+
+
+
 
 	</script>
