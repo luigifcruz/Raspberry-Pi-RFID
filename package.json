@@ -1,0 +1,26 @@
+{
+  "name": "raspberrypi-rfid-reader",
+  "version": "1.0.0",
+  "description": "A HTTP RFID reader for Raspberry Pi.",
+  "main": "rfid.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node rfid.js",
+    "preinstall": "wget http://www.airspayce.com/mikem/bcm2835/bcm2835-1.35.tar.gz; tar -zxf bcm2835-1.35.tar.gz; cd bcm2835-1.35; ./configure; sudo make install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luigifreitas/Raspberry-Pi-RFID.git"
+  },
+  "author": "Luigi Freitas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/luigifreitas/Raspberry-Pi-RFID/issues"
+  },
+  "homepage": "https://github.com/luigifreitas/Raspberry-Pi-RFID#readme",
+  "dependencies": {
+    "express": "^4.13.4",
+    "rc522-rfid": "^14.1.10",
+    "socket.io": "^1.4.5"
+  }
+}
