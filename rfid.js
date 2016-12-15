@@ -7,7 +7,7 @@ console.log("App successfully launched!");
 
 // Create a sample login page @ http://localhost:8000
 app.get('/', function(req, res){
-	res.sendfile(__dirname + '/rfid2.html');
+	res.sendFile(__dirname + '/rfid2.html');
 });
 
 // Everytime you tag in this will be triggered.
